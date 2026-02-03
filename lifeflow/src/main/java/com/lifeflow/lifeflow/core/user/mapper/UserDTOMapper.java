@@ -9,10 +9,10 @@ import org.springframework.stereotype.Service;
 @AllArgsConstructor
 public class UserDTOMapper {
 
-    public UserDTO convert(User user) {
+    public UserDTO convert(User user, String token) {
         return new UserDTO(
                 user.getName(),
-                user.getPassword()
+                token
         );
     }
 
