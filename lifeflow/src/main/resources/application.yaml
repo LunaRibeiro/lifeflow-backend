@@ -16,6 +16,10 @@ spring:
       hibernate:
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
+api:
+  security:
+    token:
+      secret: ${TOKEN_SECRET:my-secret-key}
 
 server:
   port: 8081
